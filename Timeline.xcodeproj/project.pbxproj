@@ -19,6 +19,7 @@
 		92FAC8291BE9633300FF2AEE /* AddPhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC8281BE9633300FF2AEE /* AddPhotoTableViewController.swift */; };
 		92FAC82B1BE964A500FF2AEE /* LoginSignupPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC82A1BE964A500FF2AEE /* LoginSignupPickerViewController.swift */; };
 		92FAC82D1BE9652F00FF2AEE /* LoginSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC82C1BE9652F00FF2AEE /* LoginSignupViewController.swift */; };
+		92FAC82F1BE9658D00FF2AEE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC82E1BE9658D00FF2AEE /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		92FAC8281BE9633300FF2AEE /* AddPhotoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotoTableViewController.swift; sourceTree = "<group>"; };
 		92FAC82A1BE964A500FF2AEE /* LoginSignupPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSignupPickerViewController.swift; sourceTree = "<group>"; };
 		92FAC82C1BE9652F00FF2AEE /* LoginSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSignupViewController.swift; sourceTree = "<group>"; };
+		92FAC82E1BE9658D00FF2AEE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +81,19 @@
 				92FAC82C1BE9652F00FF2AEE /* LoginSignupViewController.swift */,
 				92FAC8151BE9567700FF2AEE /* Assets.xcassets */,
 				92FAC8121BE9567700FF2AEE /* Main.storyboard */,
+				92FAC8301BE9659B00FF2AEE /* Model / Data */,
 				92FAC8171BE9567700FF2AEE /* LaunchScreen.storyboard */,
 				92FAC81A1BE9567700FF2AEE /* Info.plist */,
 			);
 			path = Timeline;
+			sourceTree = "<group>";
+		};
+		92FAC8301BE9659B00FF2AEE /* Model / Data */ = {
+			isa = PBXGroup;
+			children = (
+				92FAC82E1BE9658D00FF2AEE /* User.swift */,
+			);
+			name = "Model / Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 				92FAC82B1BE964A500FF2AEE /* LoginSignupPickerViewController.swift in Sources */,
 				92FAC8231BE95F7200FF2AEE /* PostDetailTableViewController.swift in Sources */,
 				92FAC80F1BE9567700FF2AEE /* AppDelegate.swift in Sources */,
+				92FAC82F1BE9658D00FF2AEE /* User.swift in Sources */,
 				92FAC8291BE9633300FF2AEE /* AddPhotoTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
