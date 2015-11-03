@@ -20,6 +20,9 @@
 		92FAC82B1BE964A500FF2AEE /* LoginSignupPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC82A1BE964A500FF2AEE /* LoginSignupPickerViewController.swift */; };
 		92FAC82D1BE9652F00FF2AEE /* LoginSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC82C1BE9652F00FF2AEE /* LoginSignupViewController.swift */; };
 		92FAC82F1BE9658D00FF2AEE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC82E1BE9658D00FF2AEE /* User.swift */; };
+		92FAC8321BE968F400FF2AEE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC8311BE968F400FF2AEE /* Post.swift */; };
+		92FAC8341BE96C7600FF2AEE /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC8331BE96C7600FF2AEE /* Comment.swift */; };
+		92FAC8361BE96D5D00FF2AEE /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC8351BE96D5D00FF2AEE /* Like.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		92FAC82A1BE964A500FF2AEE /* LoginSignupPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSignupPickerViewController.swift; sourceTree = "<group>"; };
 		92FAC82C1BE9652F00FF2AEE /* LoginSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSignupViewController.swift; sourceTree = "<group>"; };
 		92FAC82E1BE9658D00FF2AEE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		92FAC8311BE968F400FF2AEE /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = ../Post.swift; sourceTree = "<group>"; };
+		92FAC8331BE96C7600FF2AEE /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		92FAC8351BE96D5D00FF2AEE /* Like.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				92FAC82E1BE9658D00FF2AEE /* User.swift */,
+				92FAC8311BE968F400FF2AEE /* Post.swift */,
+				92FAC8331BE96C7600FF2AEE /* Comment.swift */,
+				92FAC8351BE96D5D00FF2AEE /* Like.swift */,
 			);
 			name = "Model / Data";
 			sourceTree = "<group>";
@@ -169,11 +178,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				92FAC8271BE9621C00FF2AEE /* ProfileViewController.swift in Sources */,
+				92FAC8321BE968F400FF2AEE /* Post.swift in Sources */,
 				92FAC8251BE9613800FF2AEE /* UserSearchTableViewController.swift in Sources */,
 				92FAC8111BE9567700FF2AEE /* ViewController.swift in Sources */,
+				92FAC8361BE96D5D00FF2AEE /* Like.swift in Sources */,
 				92FAC8211BE95C7B00FF2AEE /* TimelineTableViewController.swift in Sources */,
 				92FAC82D1BE9652F00FF2AEE /* LoginSignupViewController.swift in Sources */,
 				92FAC82B1BE964A500FF2AEE /* LoginSignupPickerViewController.swift in Sources */,
+				92FAC8341BE96C7600FF2AEE /* Comment.swift in Sources */,
 				92FAC8231BE95F7200FF2AEE /* PostDetailTableViewController.swift in Sources */,
 				92FAC80F1BE9567700FF2AEE /* AppDelegate.swift in Sources */,
 				92FAC82F1BE9658D00FF2AEE /* User.swift in Sources */,
