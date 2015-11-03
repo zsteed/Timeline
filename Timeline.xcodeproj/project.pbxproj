@@ -16,6 +16,9 @@
 		92FAC8231BE95F7200FF2AEE /* PostDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC8221BE95F7200FF2AEE /* PostDetailTableViewController.swift */; };
 		92FAC8251BE9613800FF2AEE /* UserSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC8241BE9613800FF2AEE /* UserSearchTableViewController.swift */; };
 		92FAC8271BE9621C00FF2AEE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC8261BE9621C00FF2AEE /* ProfileViewController.swift */; };
+		92FAC8291BE9633300FF2AEE /* AddPhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC8281BE9633300FF2AEE /* AddPhotoTableViewController.swift */; };
+		92FAC82B1BE964A500FF2AEE /* LoginSignupPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC82A1BE964A500FF2AEE /* LoginSignupPickerViewController.swift */; };
+		92FAC82D1BE9652F00FF2AEE /* LoginSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC82C1BE9652F00FF2AEE /* LoginSignupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		92FAC8221BE95F7200FF2AEE /* PostDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostDetailTableViewController.swift; sourceTree = "<group>"; };
 		92FAC8241BE9613800FF2AEE /* UserSearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchTableViewController.swift; sourceTree = "<group>"; };
 		92FAC8261BE9621C00FF2AEE /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		92FAC8281BE9633300FF2AEE /* AddPhotoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotoTableViewController.swift; sourceTree = "<group>"; };
+		92FAC82A1BE964A500FF2AEE /* LoginSignupPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSignupPickerViewController.swift; sourceTree = "<group>"; };
+		92FAC82C1BE9652F00FF2AEE /* LoginSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,9 @@
 				92FAC8221BE95F7200FF2AEE /* PostDetailTableViewController.swift */,
 				92FAC8241BE9613800FF2AEE /* UserSearchTableViewController.swift */,
 				92FAC8261BE9621C00FF2AEE /* ProfileViewController.swift */,
+				92FAC8281BE9633300FF2AEE /* AddPhotoTableViewController.swift */,
+				92FAC82A1BE964A500FF2AEE /* LoginSignupPickerViewController.swift */,
+				92FAC82C1BE9652F00FF2AEE /* LoginSignupViewController.swift */,
 				92FAC8151BE9567700FF2AEE /* Assets.xcassets */,
 				92FAC8121BE9567700FF2AEE /* Main.storyboard */,
 				92FAC8171BE9567700FF2AEE /* LaunchScreen.storyboard */,
@@ -152,8 +161,11 @@
 				92FAC8251BE9613800FF2AEE /* UserSearchTableViewController.swift in Sources */,
 				92FAC8111BE9567700FF2AEE /* ViewController.swift in Sources */,
 				92FAC8211BE95C7B00FF2AEE /* TimelineTableViewController.swift in Sources */,
+				92FAC82D1BE9652F00FF2AEE /* LoginSignupViewController.swift in Sources */,
+				92FAC82B1BE964A500FF2AEE /* LoginSignupPickerViewController.swift in Sources */,
 				92FAC8231BE95F7200FF2AEE /* PostDetailTableViewController.swift in Sources */,
 				92FAC80F1BE9567700FF2AEE /* AppDelegate.swift in Sources */,
+				92FAC8291BE9633300FF2AEE /* AddPhotoTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
