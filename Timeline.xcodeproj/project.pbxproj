@@ -23,6 +23,8 @@
 		92FAC8321BE968F400FF2AEE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC8311BE968F400FF2AEE /* Post.swift */; };
 		92FAC8341BE96C7600FF2AEE /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC8331BE96C7600FF2AEE /* Comment.swift */; };
 		92FAC8361BE96D5D00FF2AEE /* Like.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC8351BE96D5D00FF2AEE /* Like.swift */; };
+		92FAC8381BE96F3D00FF2AEE /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC8371BE96F3D00FF2AEE /* UserController.swift */; };
+		92FAC83C1BE97CE300FF2AEE /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC83B1BE97CE300FF2AEE /* PostController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		92FAC8311BE968F400FF2AEE /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = ../Post.swift; sourceTree = "<group>"; };
 		92FAC8331BE96C7600FF2AEE /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		92FAC8351BE96D5D00FF2AEE /* Like.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Like.swift; sourceTree = "<group>"; };
+		92FAC8371BE96F3D00FF2AEE /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		92FAC83B1BE97CE300FF2AEE /* PostController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,13 +82,8 @@
 			children = (
 				92FAC80E1BE9567700FF2AEE /* AppDelegate.swift */,
 				92FAC8101BE9567700FF2AEE /* ViewController.swift */,
-				92FAC8201BE95C7B00FF2AEE /* TimelineTableViewController.swift */,
-				92FAC8221BE95F7200FF2AEE /* PostDetailTableViewController.swift */,
-				92FAC8241BE9613800FF2AEE /* UserSearchTableViewController.swift */,
-				92FAC8261BE9621C00FF2AEE /* ProfileViewController.swift */,
-				92FAC8281BE9633300FF2AEE /* AddPhotoTableViewController.swift */,
-				92FAC82A1BE964A500FF2AEE /* LoginSignupPickerViewController.swift */,
-				92FAC82C1BE9652F00FF2AEE /* LoginSignupViewController.swift */,
+				92FAC8391BE96F5000FF2AEE /* View Controller */,
+				92FAC83A1BE96F7600FF2AEE /* Model Controller */,
 				92FAC8151BE9567700FF2AEE /* Assets.xcassets */,
 				92FAC8121BE9567700FF2AEE /* Main.storyboard */,
 				92FAC8301BE9659B00FF2AEE /* Model / Data */,
@@ -103,6 +102,29 @@
 				92FAC8351BE96D5D00FF2AEE /* Like.swift */,
 			);
 			name = "Model / Data";
+			sourceTree = "<group>";
+		};
+		92FAC8391BE96F5000FF2AEE /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				92FAC8201BE95C7B00FF2AEE /* TimelineTableViewController.swift */,
+				92FAC8221BE95F7200FF2AEE /* PostDetailTableViewController.swift */,
+				92FAC8241BE9613800FF2AEE /* UserSearchTableViewController.swift */,
+				92FAC8261BE9621C00FF2AEE /* ProfileViewController.swift */,
+				92FAC8281BE9633300FF2AEE /* AddPhotoTableViewController.swift */,
+				92FAC82A1BE964A500FF2AEE /* LoginSignupPickerViewController.swift */,
+				92FAC82C1BE9652F00FF2AEE /* LoginSignupViewController.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		92FAC83A1BE96F7600FF2AEE /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				92FAC8371BE96F3D00FF2AEE /* UserController.swift */,
+				92FAC83B1BE97CE300FF2AEE /* PostController.swift */,
+			);
+			name = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +203,8 @@
 				92FAC8321BE968F400FF2AEE /* Post.swift in Sources */,
 				92FAC8251BE9613800FF2AEE /* UserSearchTableViewController.swift in Sources */,
 				92FAC8111BE9567700FF2AEE /* ViewController.swift in Sources */,
+				92FAC8381BE96F3D00FF2AEE /* UserController.swift in Sources */,
+				92FAC83C1BE97CE300FF2AEE /* PostController.swift in Sources */,
 				92FAC8361BE96D5D00FF2AEE /* Like.swift in Sources */,
 				92FAC8211BE95C7B00FF2AEE /* TimelineTableViewController.swift in Sources */,
 				92FAC82D1BE9652F00FF2AEE /* LoginSignupViewController.swift in Sources */,
