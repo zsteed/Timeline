@@ -280,31 +280,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgh-7m-uS7">
-                                <rect key="frame" x="139" y="161" width="42" height="30"/>
-                                <state key="normal" title="Log In"/>
-                                <connections>
-                                    <segue destination="KkB-fM-bWf" kind="show" identifier="toLoginView" id="7QO-LB-Dg1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U41-qZ-k2J">
-                                <rect key="frame" x="133" y="274" width="55" height="30"/>
-                                <state key="normal" title="Sign Up"/>
-                                <connections>
-                                    <segue destination="KkB-fM-bWf" kind="show" identifier="toSignupView" id="PPB-oB-L8j"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DGb-4g-ryl">
+                                <rect key="frame" x="0.0" y="64" width="328" height="147"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timeline" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcE-vJ-8ee">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add and view Photos of you and your friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQZ-uj-k3l">
+                                        <rect key="frame" x="0.0" y="47" width="328" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="191-O3-kFL">
+                                        <rect key="frame" x="0.0" y="70" width="328" height="77"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgh-7m-uS7">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="77"/>
+                                                <state key="normal" title="Log In"/>
+                                                <connections>
+                                                    <segue destination="KkB-fM-bWf" kind="show" identifier="toLoginView" id="7QO-LB-Dg1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U41-qZ-k2J">
+                                                <rect key="frame" x="42" y="0.0" width="286" height="77"/>
+                                                <state key="normal" title="Sign Up"/>
+                                                <connections>
+                                                    <segue destination="KkB-fM-bWf" kind="show" identifier="toSignupView" id="PPB-oB-L8j"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="U41-qZ-k2J" firstAttribute="leading" secondItem="UM9-lL-OEu" secondAttribute="leadingMargin" constant="113" id="99f-0J-kOK"/>
-                            <constraint firstItem="hgh-7m-uS7" firstAttribute="leading" secondItem="UM9-lL-OEu" secondAttribute="leadingMargin" constant="119" id="SYE-Io-m0i"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hgh-7m-uS7" secondAttribute="trailing" constant="119" id="YX3-Wz-oKU"/>
-                            <constraint firstItem="U41-qZ-k2J" firstAttribute="centerX" secondItem="UM9-lL-OEu" secondAttribute="centerX" id="ay2-12-rec"/>
-                            <constraint firstItem="hgh-7m-uS7" firstAttribute="centerX" secondItem="UM9-lL-OEu" secondAttribute="centerX" id="c7z-68-bgi"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="U41-qZ-k2J" secondAttribute="trailing" constant="112" id="cDa-dj-Afu"/>
-                            <constraint firstItem="hgh-7m-uS7" firstAttribute="top" secondItem="JPX-Cu-bu6" secondAttribute="bottom" constant="97" id="ca9-X8-MiL"/>
-                            <constraint firstItem="9R3-Eb-R1S" firstAttribute="top" secondItem="U41-qZ-k2J" secondAttribute="bottom" constant="176" id="gWq-Wn-tlX"/>
+                            <constraint firstItem="9R3-Eb-R1S" firstAttribute="top" secondItem="DGb-4g-ryl" secondAttribute="bottom" constant="225" id="XBq-Dz-B37"/>
+                            <constraint firstItem="DGb-4g-ryl" firstAttribute="leading" secondItem="UM9-lL-OEu" secondAttribute="leadingMargin" constant="-20" id="g4v-9Z-rGj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DGb-4g-ryl" secondAttribute="trailing" constant="-20" id="oWv-Uq-Kms"/>
+                            <constraint firstItem="DGb-4g-ryl" firstAttribute="top" secondItem="JPX-Cu-bu6" secondAttribute="bottom" constant="44" id="wGc-R7-zUP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jWR-il-Ce4"/>
