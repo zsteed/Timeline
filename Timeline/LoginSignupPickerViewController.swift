@@ -21,8 +21,18 @@ class LoginSignupPickerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
+        if let destinationViewController = segue.destinationViewController as? LoginSignupViewController {
+            
+            if segue.identifier == "toLoginView" {
+                destinationViewController.mode = .Login
+            }
+            
+            if segue.identifier == "toSignupView" {
+                destinationViewController.mode = .Signup
+            }
+        }
     }
 
     
@@ -31,11 +41,6 @@ class LoginSignupPickerViewController: UIViewController {
 
 
 
-//Add a prepareForSegue() function, use the segue identifier to determine what mode to set on the destination view controller.
-
-//note: You may need to add segue identifiers in Main.storyboard.
-
-//Test your different modes to verify they work as expected, that the view is presented, and that the view is dismissed when the user successfully logs in or registers.
 
 
 

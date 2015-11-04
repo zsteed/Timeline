@@ -35,7 +35,7 @@ class UserController {
     }
     
     // optional array?, called when.. not sure..
-    static func followedByUser(user: String, completion: (user: [User]?) -> Void) {
+    static func followedByUser(user: User, completion: (user: [User]?) -> Void) {
         completion(user: mockUsers())
     }
     

@@ -133,7 +133,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="OHk-bL-Jds">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendCell" id="OHk-bL-Jds">
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OHk-bL-Jds" id="sRL-4r-qC7">
@@ -159,9 +159,15 @@
                                 <segment title="Friends"/>
                                 <segment title="Add Friend"/>
                             </segments>
+                            <connections>
+                                <action selector="selectedIndexChanged:" destination="GDy-RJ-Mi5" eventType="valueChanged" id="aow-Vp-gPz"/>
+                            </connections>
                         </segmentedControl>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="modeSegmentedControl" destination="qa4-aa-cFQ" id="pAF-B2-8YM"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wNL-BX-Pxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -444,8 +450,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PPB-oB-L8j"/>
-        <segue reference="AuO-mu-bD7"/>
         <segue reference="3Cf-ac-KEm"/>
+        <segue reference="AuO-mu-bD7"/>
+        <segue reference="PPB-oB-L8j"/>
     </inferredMetricsTieBreakers>
 </document>

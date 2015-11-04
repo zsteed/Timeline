@@ -19,7 +19,7 @@ class LoginSignupViewController: UIViewController {
     
     @IBAction func actionButtonTapped(sender: AnyObject) {
         if fieldsAreValid {
-            switch viewMode {
+            switch mode {
             case .Login:
                 UserController.authenticateUser(emailTextField.text!, password: passwordTextField.text!, completion: { (success, user) -> Void in
                     if success, let _ = user {
@@ -56,14 +56,15 @@ class LoginSignupViewController: UIViewController {
     }
     
 
-    var viewMode = ViewMode.Signup
+    var mode: ViewMode = .Signup
+    
     var fieldsAreValid: Bool {
         get {
-            switch viewMode {
+            switch mode {
             case .Login:
                     return !(emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty)
             case .Signup:
-                return !(emailTextField.text!.isEmpty || usernameTextField.text!.isEmpty || passwordTextField.text!.isEmpty)
+                return !(emailTextField.text!.isEmpty || usernameTextField.text!.isEmpty || passwordTextField.text!.isEmpty)                
             }
         }
     }
@@ -75,7 +76,7 @@ class LoginSignupViewController: UIViewController {
     }
     
     func updateViewBasedOnMode() {
-        switch viewMode {
+        switch mode {
         case .Login:
             usernameTextField.hidden = true
             bioTextField.hidden = true
