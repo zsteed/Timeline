@@ -12,7 +12,7 @@ import UIKit
 class PostController {
     
     // when use clicks homepage this function will be called from firebase to update current timeline
-    static func fetchTimelineForUser(user: User, completion: (post: [Post]) -> Void) {
+    static func fetchTimelineForUser(user: User, completion: (post: [Post]?) -> Void) {
        completion(post: mockPosts())
     }
     

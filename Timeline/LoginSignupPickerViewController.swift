@@ -21,15 +21,21 @@ class LoginSignupPickerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
     }
-    */
+
+    
 
 }
+
+
+
+//Add a prepareForSegue() function, use the segue identifier to determine what mode to set on the destination view controller.
+
+//note: You may need to add segue identifiers in Main.storyboard.
+
+//Test your different modes to verify they work as expected, that the view is presented, and that the view is dismissed when the user successfully logs in or registers.
+
+
+
