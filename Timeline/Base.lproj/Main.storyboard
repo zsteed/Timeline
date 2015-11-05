@@ -72,7 +72,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ikb-y5-k1C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1459" y="891"/>
+            <point key="canvasLocation" x="1307" y="278"/>
         </scene>
         <!--Add Photo Table View Controller-->
         <scene sceneID="9Ah-1Z-KYT">
@@ -257,6 +257,9 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <connections>
+                                            <segue destination="lxV-K3-eQg" kind="show" identifier="toPostDetailView" id="A7z-uc-dWf"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="headerView" id="V5Q-Hp-g33" customClass="ProfileHeaderCollectionReusableView" customModule="Timeline" customModuleProvider="target">
@@ -551,6 +554,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="3Cf-ac-KEm"/>
         <segue reference="AfD-U4-suq"/>
+        <segue reference="A7z-uc-dWf"/>
         <segue reference="PPB-oB-L8j"/>
     </inferredMetricsTieBreakers>
 </document>

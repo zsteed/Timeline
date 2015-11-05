@@ -36,6 +36,16 @@ class LoginSignupViewController: UIViewController {
                         self.presentValidationAlertWithTitle("Unable to Signup", message: "Please check your information and try again")
                     }
                 })
+            case .Edit:
+                UserController.updateUser(self.user!, username: self.usernameTextField.text!, bio: self.bioTextField.text, url: self.urlTextField.text, completion: { (success, user) -> Void in
+                    
+                    if success {
+                        self.dismissViewControllerAnimated(true, completion: nil)
+                    } else {
+                        self.presentValidationAlertWithTitle("Unable to Update User", message: "Please check your information and try again.")
+                    }
+                })
+                
         }
                 
         } else {
@@ -55,7 +65,7 @@ class LoginSignupViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    var user: User?
     var mode: ViewMode = .Signup
     
     var fieldsAreValid: Bool {
@@ -64,7 +74,9 @@ class LoginSignupViewController: UIViewController {
             case .Login:
                     return !(emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty)
             case .Signup:
-                return !(emailTextField.text!.isEmpty || usernameTextField.text!.isEmpty || passwordTextField.text!.isEmpty)                
+                return !(emailTextField.text!.isEmpty || usernameTextField.text!.isEmpty || passwordTextField.text!.isEmpty)
+            case .Edit:
+                return !(usernameTextField.text!.isEmpty)
             }
         }
     }
@@ -73,6 +85,7 @@ class LoginSignupViewController: UIViewController {
         
         case Login
         case Signup
+        case Edit
     }
     
     func updateViewBasedOnMode() {
@@ -85,6 +98,19 @@ class LoginSignupViewController: UIViewController {
             actionButton.setTitle("Login", forState: .Normal)
         case .Signup:
             actionButton.setTitle("Signup", forState: .Normal)
+        case .Edit:
+            actionButton.setTitle("Update", forState: .Normal)
+            
+            emailTextField.hidden = true
+            passwordTextField.hidden = true
+            
+            if let user = self.user {
+                
+                usernameTextField.text = user.username
+                bioTextField.text = user.bio
+                urlTextField.text = user.url
+                
+            }
         }
         
     }
