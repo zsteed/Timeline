@@ -234,10 +234,80 @@
                     <view key="view" contentMode="scaleToFill" id="xeL-EH-Xov">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dDV-q7-8Oc">
+                                <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="70Z-qx-dz3">
+                                    <size key="itemSize" width="105" height="96"/>
+                                    <size key="headerReferenceSize" width="50" height="105"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="dkX-N0-I5f">
+                                        <rect key="frame" x="0.0" y="169" width="105" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="105" height="96"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2eX-kW-Bja">
+                                                    <rect key="frame" x="0.0" y="0.0" width="105" height="96"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="headerView" id="V5Q-Hp-g33" customClass="ProfileHeaderCollectionReusableView" customModule="Timeline" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="64" width="320" height="105"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="C2N-SK-zGK">
+                                            <rect key="frame" x="0.0" y="0.0" width="81" height="105"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVl-im-HC9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="81" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abv-aX-lrh">
+                                                    <rect key="frame" x="0.0" y="33" width="81" height="30"/>
+                                                    <state key="normal" title="Homepage"/>
+                                                    <connections>
+                                                        <action selector="urlButtonTapped" destination="V5Q-Hp-g33" eventType="touchUpInside" id="gDv-vW-Pqt"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQq-WI-oHE">
+                                                    <rect key="frame" x="0.0" y="75" width="81" height="30"/>
+                                                    <state key="normal" title="Follow User"/>
+                                                    <connections>
+                                                        <action selector="followActionButtonTapped" destination="V5Q-Hp-g33" eventType="touchUpInside" id="Bli-vd-96C"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <connections>
+                                        <outlet property="bioLabel" destination="sVl-im-HC9" id="avU-Ja-aCP"/>
+                                        <outlet property="followButton" destination="mQq-WI-oHE" id="IHg-Qy-GJt"/>
+                                        <outlet property="homepageButton" destination="abv-aX-lrh" id="oLB-wu-B65"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZKJ-2s-DXh" id="83p-uU-xCY"/>
+                                    <outlet property="delegate" destination="ZKJ-2s-DXh" id="ppH-5g-nry"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="vK9-SA-3Fp"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="dDV-q7-8Oc" id="Pba-jx-RJm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3b-Sy-nvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -480,7 +550,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="3Cf-ac-KEm"/>
+        <segue reference="AfD-U4-suq"/>
         <segue reference="PPB-oB-L8j"/>
-        <segue reference="AuO-mu-bD7"/>
     </inferredMetricsTieBreakers>
 </document>

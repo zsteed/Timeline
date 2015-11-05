@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9282CA8A1BEC09860005D451 /* ProfileHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9282CA891BEC09860005D451 /* ProfileHeaderCollectionReusableView.swift */; };
+		9282CA8C1BEC0E8B0005D451 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9282CA8B1BEC0E8B0005D451 /* ImageCollectionViewCell.swift */; };
 		92B075BB1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B075BA1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift */; };
 		92FAC80F1BE9567700FF2AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC80E1BE9567700FF2AEE /* AppDelegate.swift */; };
 		92FAC8111BE9567700FF2AEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC8101BE9567700FF2AEE /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9282CA891BEC09860005D451 /* ProfileHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		9282CA8B1BEC0E8B0005D451 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		92B075BA1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchResultsTableViewController.swift; sourceTree = "<group>"; };
 		92FAC80B1BE9567700FF2AEE /* Timeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FAC80E1BE9567700FF2AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,11 +118,13 @@
 				92FAC8201BE95C7B00FF2AEE /* TimelineTableViewController.swift */,
 				92FAC8221BE95F7200FF2AEE /* PostDetailTableViewController.swift */,
 				92FAC8261BE9621C00FF2AEE /* ProfileViewController.swift */,
+				9282CA891BEC09860005D451 /* ProfileHeaderCollectionReusableView.swift */,
 				92FAC8281BE9633300FF2AEE /* AddPhotoTableViewController.swift */,
 				92FAC82A1BE964A500FF2AEE /* LoginSignupPickerViewController.swift */,
 				92FAC82C1BE9652F00FF2AEE /* LoginSignupViewController.swift */,
 				92FAC8241BE9613800FF2AEE /* UserSearchTableViewController.swift */,
 				92B075BA1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift */,
+				9282CA8B1BEC0E8B0005D451 /* ImageCollectionViewCell.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -219,9 +225,11 @@
 				92FAC82B1BE964A500FF2AEE /* LoginSignupPickerViewController.swift in Sources */,
 				92FAC8341BE96C7600FF2AEE /* Comment.swift in Sources */,
 				92FAC8231BE95F7200FF2AEE /* PostDetailTableViewController.swift in Sources */,
+				9282CA8A1BEC09860005D451 /* ProfileHeaderCollectionReusableView.swift in Sources */,
 				92FAC80F1BE9567700FF2AEE /* AppDelegate.swift in Sources */,
 				92FAC82F1BE9658D00FF2AEE /* User.swift in Sources */,
 				92FAC8291BE9633300FF2AEE /* AddPhotoTableViewController.swift in Sources */,
+				9282CA8C1BEC0E8B0005D451 /* ImageCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

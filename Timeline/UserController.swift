@@ -25,12 +25,17 @@ class UserController {
     }
     
     // this is called when someone when someone wants to follow the current user
-    static func followUser(user: String, completion: (success: Bool) -> Void) {
+    static func followUser(user: User, completion: (success: Bool) -> Void) {
+        completion(success: true)
+    }
+    
+    static func unfollowUser(user: User, completion: (success: Bool) -> Void) {
+        
         completion(success: true)
     }
     
     // this will be called when the current user follows someone new
-    static func userFollowsUser(user: String, secondUser: String, completion: (follows: Bool) -> Void) {
+    static func userFollowsUser(user: User, secondUser: User, completion: (follows: Bool) -> Void) {
         completion(follows: true)
     }
     
