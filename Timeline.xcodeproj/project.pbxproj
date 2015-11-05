@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92B075BB1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B075BA1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift */; };
 		92FAC80F1BE9567700FF2AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC80E1BE9567700FF2AEE /* AppDelegate.swift */; };
 		92FAC8111BE9567700FF2AEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC8101BE9567700FF2AEE /* ViewController.swift */; };
 		92FAC8141BE9567700FF2AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FAC8121BE9567700FF2AEE /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		92B075BA1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchResultsTableViewController.swift; sourceTree = "<group>"; };
 		92FAC80B1BE9567700FF2AEE /* Timeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FAC80E1BE9567700FF2AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92FAC8101BE9567700FF2AEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				92FAC8281BE9633300FF2AEE /* AddPhotoTableViewController.swift */,
 				92FAC82A1BE964A500FF2AEE /* LoginSignupPickerViewController.swift */,
 				92FAC82C1BE9652F00FF2AEE /* LoginSignupViewController.swift */,
+				92B075BA1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				92FAC83E1BEA5D1400FF2AEE /* ImageController.swift in Sources */,
 				92FAC8211BE95C7B00FF2AEE /* TimelineTableViewController.swift in Sources */,
 				92FAC82D1BE9652F00FF2AEE /* LoginSignupViewController.swift in Sources */,
+				92B075BB1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift in Sources */,
 				92FAC82B1BE964A500FF2AEE /* LoginSignupPickerViewController.swift in Sources */,
 				92FAC8341BE96C7600FF2AEE /* Comment.swift in Sources */,
 				92FAC8231BE95F7200FF2AEE /* PostDetailTableViewController.swift in Sources */,
@@ -367,6 +371,7 @@
 				92FAC81F1BE9567700FF2AEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
