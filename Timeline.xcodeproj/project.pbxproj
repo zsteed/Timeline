@@ -113,11 +113,11 @@
 			children = (
 				92FAC8201BE95C7B00FF2AEE /* TimelineTableViewController.swift */,
 				92FAC8221BE95F7200FF2AEE /* PostDetailTableViewController.swift */,
-				92FAC8241BE9613800FF2AEE /* UserSearchTableViewController.swift */,
 				92FAC8261BE9621C00FF2AEE /* ProfileViewController.swift */,
 				92FAC8281BE9633300FF2AEE /* AddPhotoTableViewController.swift */,
 				92FAC82A1BE964A500FF2AEE /* LoginSignupPickerViewController.swift */,
 				92FAC82C1BE9652F00FF2AEE /* LoginSignupViewController.swift */,
+				92FAC8241BE9613800FF2AEE /* UserSearchTableViewController.swift */,
 				92B075BA1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift */,
 			);
 			name = "View Controller";
