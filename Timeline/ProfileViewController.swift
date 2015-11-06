@@ -41,6 +41,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, Profi
         // print(user)
         if user == nil {
             user = UserController.sharedController.currentUser
+            editBarButtonItem.enabled = true
         }
 
         // Do any additional setup after loading the view.

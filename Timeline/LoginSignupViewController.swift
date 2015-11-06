@@ -81,6 +81,7 @@ class LoginSignupViewController: UIViewController {
         }
     }
     
+    
     enum ViewMode {
         
         case Login
@@ -113,6 +114,11 @@ class LoginSignupViewController: UIViewController {
             }
         }
         
+    }
+    
+    func updateWithUser(user: User) {
+        self.user = user
+        mode = .Edit
     }
     
     func presentValidationAlertWithTitle(title: String, message: String) {
