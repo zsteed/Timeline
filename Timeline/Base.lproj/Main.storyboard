@@ -223,7 +223,7 @@
             </objects>
             <point key="canvasLocation" x="-269" y="278"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Title-->
         <scene sceneID="YLm-Ni-7pe">
             <objects>
                 <viewController id="ZKJ-2s-DXh" customClass="ProfileViewController" customModule="Timeline" customModuleProvider="target" sceneMemberID="viewController">
@@ -306,10 +306,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vK9-SA-3Fp"/>
+                    <navigationItem key="navigationItem" title="Title" id="bsK-UN-VSJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="kch-zp-66b">
+                            <connections>
+                                <segue destination="KkB-fM-bWf" kind="presentation" identifier="toEditProfile" id="FhO-6j-hCE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="dDV-q7-8Oc" id="Pba-jx-RJm"/>
+                        <outlet property="editBarButtonItem" destination="kch-zp-66b" id="hec-VZ-ERz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3b-Sy-nvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -548,13 +555,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uU-sS-94C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-74" y="1536"/>
+            <point key="canvasLocation" x="-69" y="1565"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="3Cf-ac-KEm"/>
         <segue reference="AfD-U4-suq"/>
+        <segue reference="FhO-6j-hCE"/>
         <segue reference="A7z-uc-dWf"/>
-        <segue reference="PPB-oB-L8j"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,6 +12,7 @@ import SafariServices
 class ProfileViewController: UIViewController, UICollectionViewDataSource, ProfileHeaderCollectionReusableViewDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var editBarButtonItem: UIBarButtonItem!
     
     var user: User?
     var userPosts: [Post] = []
@@ -37,7 +38,7 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, Profi
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(user)
+        // print(user)
         if user == nil {
             user = UserController.sharedController.currentUser
         }
@@ -111,6 +112,16 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, Profi
                     })
                 }
             }
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toEditProfile" {
+            let destinationViewController = segue.destinationViewController as? LoginSignupViewController
+            
+            _ = destinationViewController?.view
+            
+            destinationViewController?.updateWithUser(user!)
         }
     }
     
