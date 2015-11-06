@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9282CA8A1BEC09860005D451 /* ProfileHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9282CA891BEC09860005D451 /* ProfileHeaderCollectionReusableView.swift */; };
 		9282CA8C1BEC0E8B0005D451 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9282CA8B1BEC0E8B0005D451 /* ImageCollectionViewCell.swift */; };
+		9282CAAC1BED1D560005D451 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9282CAAB1BED1D560005D451 /* PostTableViewCell.swift */; };
 		92B075BB1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B075BA1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift */; };
 		92FAC80F1BE9567700FF2AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC80E1BE9567700FF2AEE /* AppDelegate.swift */; };
 		92FAC8111BE9567700FF2AEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC8101BE9567700FF2AEE /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		9282CA891BEC09860005D451 /* ProfileHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		9282CA8B1BEC0E8B0005D451 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		9282CAAB1BED1D560005D451 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		92B075BA1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchResultsTableViewController.swift; sourceTree = "<group>"; };
 		92FAC80B1BE9567700FF2AEE /* Timeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FAC80E1BE9567700FF2AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				92FAC8241BE9613800FF2AEE /* UserSearchTableViewController.swift */,
 				92B075BA1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift */,
 				9282CA8B1BEC0E8B0005D451 /* ImageCollectionViewCell.swift */,
+				9282CAAB1BED1D560005D451 /* PostTableViewCell.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				92FAC8381BE96F3D00FF2AEE /* UserController.swift in Sources */,
 				92FAC83C1BE97CE300FF2AEE /* PostController.swift in Sources */,
 				92FAC8361BE96D5D00FF2AEE /* Like.swift in Sources */,
+				9282CAAC1BED1D560005D451 /* PostTableViewCell.swift in Sources */,
 				92FAC83E1BEA5D1400FF2AEE /* ImageController.swift in Sources */,
 				92FAC8211BE95C7B00FF2AEE /* TimelineTableViewController.swift in Sources */,
 				92FAC82D1BE9652F00FF2AEE /* LoginSignupViewController.swift in Sources */,
