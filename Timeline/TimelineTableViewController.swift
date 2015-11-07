@@ -69,6 +69,16 @@ class TimelineTableViewController: UITableViewController {
         loadTimeLineForUser(UserController.sharedController.currentUser)
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toPostDetailView" {
+            if let cell = sender as? UITableViewCell, let indexPath = tableView.indexPathForCell(cell) {
+                let post = posts[indexPath.row]
+                let destinationViewController = segue.destinationViewController as? PostDetailTableViewController
+                
+                destinationViewController?.post = post 
+            }
+        }
+    }
 
     
    
