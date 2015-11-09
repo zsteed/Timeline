@@ -10,6 +10,14 @@
 		9282CA8A1BEC09860005D451 /* ProfileHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9282CA891BEC09860005D451 /* ProfileHeaderCollectionReusableView.swift */; };
 		9282CA8C1BEC0E8B0005D451 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9282CA8B1BEC0E8B0005D451 /* ImageCollectionViewCell.swift */; };
 		9282CAAC1BED1D560005D451 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9282CAAB1BED1D560005D451 /* PostTableViewCell.swift */; };
+		92AB21FE1BF1371600E8602A /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AB21FC1BF136FF00E8602A /* Firebase.framework */; };
+		92AB21FF1BF1371600E8602A /* Firebase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92AB21FC1BF136FF00E8602A /* Firebase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		92AB22021BF1373300E8602A /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AB22011BF1373300E8602A /* libicucore.tbd */; };
+		92AB22041BF1374700E8602A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AB22031BF1374700E8602A /* libc++.tbd */; };
+		92AB22061BF1375A00E8602A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AB22051BF1375A00E8602A /* CFNetwork.framework */; };
+		92AB22081BF1376B00E8602A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AB22071BF1376B00E8602A /* Security.framework */; };
+		92AB220A1BF1377B00E8602A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92AB22091BF1377B00E8602A /* SystemConfiguration.framework */; };
+		92AB220C1BF137D700E8602A /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB220B1BF137D700E8602A /* FirebaseController.swift */; };
 		92B075BB1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B075BA1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift */; };
 		92FAC80F1BE9567700FF2AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC80E1BE9567700FF2AEE /* AppDelegate.swift */; };
 		92FAC8111BE9567700FF2AEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC8101BE9567700FF2AEE /* ViewController.swift */; };
@@ -32,10 +40,31 @@
 		92FAC83E1BEA5D1400FF2AEE /* ImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FAC83D1BEA5D1400FF2AEE /* ImageController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		92AB22001BF1371600E8602A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				92AB21FF1BF1371600E8602A /* Firebase.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9282CA891BEC09860005D451 /* ProfileHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		9282CA8B1BEC0E8B0005D451 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		9282CAAB1BED1D560005D451 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		92AB21FC1BF136FF00E8602A /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		92AB22011BF1373300E8602A /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		92AB22031BF1374700E8602A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		92AB22051BF1375A00E8602A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		92AB22071BF1376B00E8602A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		92AB22091BF1377B00E8602A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		92AB220B1BF137D700E8602A /* FirebaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
 		92B075BA1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchResultsTableViewController.swift; sourceTree = "<group>"; };
 		92FAC80B1BE9567700FF2AEE /* Timeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FAC80E1BE9567700FF2AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,17 +94,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92AB220A1BF1377B00E8602A /* SystemConfiguration.framework in Frameworks */,
+				92AB22081BF1376B00E8602A /* Security.framework in Frameworks */,
+				92AB22061BF1375A00E8602A /* CFNetwork.framework in Frameworks */,
+				92AB22041BF1374700E8602A /* libc++.tbd in Frameworks */,
+				92AB22021BF1373300E8602A /* libicucore.tbd in Frameworks */,
+				92AB21FE1BF1371600E8602A /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92AB21FB1BF136E700E8602A /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				92AB22091BF1377B00E8602A /* SystemConfiguration.framework */,
+				92AB22071BF1376B00E8602A /* Security.framework */,
+				92AB22051BF1375A00E8602A /* CFNetwork.framework */,
+				92AB22031BF1374700E8602A /* libc++.tbd */,
+				92AB22011BF1373300E8602A /* libicucore.tbd */,
+				92AB21FC1BF136FF00E8602A /* Firebase.framework */,
+			);
+			name = Framework;
+			path = Timeline;
+			sourceTree = "<group>";
+		};
 		92FAC8021BE9567700FF2AEE = {
 			isa = PBXGroup;
 			children = (
 				92FAC80D1BE9567700FF2AEE /* Timeline */,
 				92FAC80C1BE9567700FF2AEE /* Products */,
+				92AB21FB1BF136E700E8602A /* Framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +142,7 @@
 			children = (
 				92FAC80E1BE9567700FF2AEE /* AppDelegate.swift */,
 				92FAC8101BE9567700FF2AEE /* ViewController.swift */,
+				92AB220B1BF137D700E8602A /* FirebaseController.swift */,
 				92FAC8391BE96F5000FF2AEE /* View Controller */,
 				92FAC83A1BE96F7600FF2AEE /* Model Controller */,
 				92FAC8151BE9567700FF2AEE /* Assets.xcassets */,
@@ -152,6 +203,7 @@
 				92FAC8071BE9567700FF2AEE /* Sources */,
 				92FAC8081BE9567700FF2AEE /* Frameworks */,
 				92FAC8091BE9567700FF2AEE /* Resources */,
+				92AB22001BF1371600E8602A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,6 +281,7 @@
 				92FAC82B1BE964A500FF2AEE /* LoginSignupPickerViewController.swift in Sources */,
 				92FAC8341BE96C7600FF2AEE /* Comment.swift in Sources */,
 				92FAC8231BE95F7200FF2AEE /* PostDetailTableViewController.swift in Sources */,
+				92AB220C1BF137D700E8602A /* FirebaseController.swift in Sources */,
 				9282CA8A1BEC09860005D451 /* ProfileHeaderCollectionReusableView.swift in Sources */,
 				92FAC80F1BE9567700FF2AEE /* AppDelegate.swift in Sources */,
 				92FAC82F1BE9658D00FF2AEE /* User.swift in Sources */,
@@ -346,6 +399,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Timeline",
+				);
 				INFOPLIST_FILE = Timeline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Noble.Timeline;
@@ -357,6 +414,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Timeline",
+				);
 				INFOPLIST_FILE = Timeline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Noble.Timeline;
