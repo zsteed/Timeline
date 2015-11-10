@@ -142,7 +142,6 @@
 			children = (
 				92FAC80E1BE9567700FF2AEE /* AppDelegate.swift */,
 				92FAC8101BE9567700FF2AEE /* ViewController.swift */,
-				92AB220B1BF137D700E8602A /* FirebaseController.swift */,
 				92FAC8391BE96F5000FF2AEE /* View Controller */,
 				92FAC83A1BE96F7600FF2AEE /* Model Controller */,
 				92FAC8151BE9567700FF2AEE /* Assets.xcassets */,
@@ -168,6 +167,7 @@
 		92FAC8391BE96F5000FF2AEE /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				92AB220B1BF137D700E8602A /* FirebaseController.swift */,
 				92FAC8201BE95C7B00FF2AEE /* TimelineTableViewController.swift */,
 				92FAC8221BE95F7200FF2AEE /* PostDetailTableViewController.swift */,
 				92FAC8261BE9621C00FF2AEE /* ProfileViewController.swift */,

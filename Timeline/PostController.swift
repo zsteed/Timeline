@@ -18,51 +18,108 @@ class PostController {
     
     // function is called when image and text is added and they click post, it will post to timeline
     static func addPost(image: UIImage, caption: String?, completion: (success: Bool, post: Post?) -> Void) {
-        completion(success: true, post: mockPosts().first)
+        
+        ImageController.uploadImage(image) { (identifier) -> Void in
+            if let identifier = identifier {
+                var post = Post(imageEndPoint: identifier, caption: caption)
+                post.save()
+                completion(success: true, post: post)
+            } else {
+                completion(success: false, post: nil)
+            }
+        }
     }
     
     // not sure..
     static func postFromIdentifier(identifier: String, completion: (post: Post?) -> Void) {
-        completion(post: mockPosts().first)
+        
+        FirebaseController.dataAtEndpoint("posts/\(identifier)") { (data) -> Void in
+            if let data = data as? [String:AnyObject] {
+                let post = Post(json: data, identifier: identifier)
+                completion(post: post)
+            } else {
+                completion(post: nil)
+            }
+        }
+        
     }
     
     // if user wants to find all posts they have done
     static func postsForUser(user: User, completion: (post: [Post]?) -> Void) {
-        completion(post: mockPosts())
+        
+        FirebaseController.base.childByAppendingPath("posts").queryOrderedByChild("username").queryEqualToValue(user.username).observeSingleEventOfType(.Value, withBlock: { snapshot in
+            if let postDictionaries = snapshot.value as? [String:AnyObject] {
+                let posts = postDictionaries.flatMap({Post(json: $0.1 as! [String : AnyObject], identifier: $0.0)})
+                let orderedPosts = orderPosts(posts)
+                completion(post: orderedPosts)
+            } else {
+                completion(post: nil)
+            }
+        })
     }
     
     // deletes current post
     static func deletePost(post: Post) {
-        
+        post.delete()
     }
     
     // called when someones comments on a photo
-    static func addCommentWithTextToPost(string: String, post: Post, completion: (success: Bool, post: Post?) -> Void) {
-        completion(success: true, post: mockPosts().first)
+    static func addCommentWithTextToPost(text: String, post: Post, completion: (success: Bool, post: Post?) -> Void) {
+        
+        if let postIdentifier = post.identifier {
+            var comment = Comment(username: UserController.sharedController.currentUser.username, text: text, postIdentifier: postIdentifier)
+            comment.save()
+            
+            PostController.postFromIdentifier(comment.postIdentifier){ (post) -> Void in
+                completion(success: true, post: post)
+            }
+        } else {
+            var post = post
+            post.save()
+            var comment = Comment(username: UserController.sharedController.currentUser.username, text: text, postIdentifier: post.identifier!)
+            comment.save()
+            PostController.postFromIdentifier(comment.postIdentifier) { (post) -> Void in
+                completion(success: true, post: post)
+        }
+    }
     }
     
     // delete comment when called in post controller
-    static func deleteComment(comment: String, Completion: (success: Bool, post: Post?) -> Void) {
-        Completion(success: true, post: mockPosts().first)
+    static func deleteComment(comment: Comment, completion: (success: Bool, post: Post?) -> Void) {
+        comment.delete()
+        PostController.postFromIdentifier(comment.postIdentifier) { (post) ->Void in
+            completion(success: true, post: post)
+        }
     }
     
     // called when like is pressed on post
     static func addLikeToPost(post: Post, completion: (success: Bool, post: Post?) -> Void) {
-        completion(success: true, post: mockPosts().first)
+        if let postIdentifier = post.identifier {
+            var like = Like(username: UserController.sharedController.currentUser.username, postIdentifier: postIdentifier)
+            like.save()
+        } else {
+            var post = post
+            post.save()
+            var like = Like(username: UserController.sharedController.currentUser.username, postIdentifier: post.identifier!)
+            like.save()
+        }
+        PostController.postFromIdentifier(post.identifier!, completion: { (post) -> Void in
+            completion(success: true, post: post)
+        })
     }
     
     // called when like is taken back from post
-    static func deleteLike(like: String, completion: (success: Bool, post: Post?) -> Void) {
-        completion(success: true, post: mockPosts().first)
+    static func deleteLike(like: Like, completion: (success: Bool, post: Post?) -> Void) {
+        like.delete()
+        PostController.postFromIdentifier(like.postIdentifier) { (post) -> Void in
+            completion(success: true, post: post)
+        }
     }
     
-    // not sure..
-    static func orderPosts(post: [Post]) -> [Post] {
-        return []
+    static func orderPosts(posts: [Post]) -> [Post] {
+        return posts.sort({$0.0.identifier > $0.1.identifier})
     }
     
-    //13. Implement the `mockPosts()` function by returning an array of at least 3 initalized posts.
-    //* note: Use a static string `-K1l4125TYvKMc7rcp5e` as the sample image identifier.
     static func mockPosts() -> [Post] {
         
         let sampleImageIdentifier = "-K1l4125TYvKMc7rcp5e"

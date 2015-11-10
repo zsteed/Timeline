@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Post: Equatable {
+struct Post: Equatable, FirebaseType {
     
     private let kImageEndPoint = "imageEndPoint"
     private let KCaption = "caption"
@@ -55,7 +55,7 @@ struct Post: Equatable {
         
     }
     
-    init(imageEndPoint: String, caption: String?, username: String, identifier: String?, comments: [Post] = [], likes: [Post] = []) {
+    init(imageEndPoint: String, caption: String?, username: String = "", identifier: String? = nil, comments: [Comment] = [], likes: [Like] = []) {
         
         self.imageEndPoint = imageEndPoint
         self.caption = nil

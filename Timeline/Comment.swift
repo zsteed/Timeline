@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Comment: Equatable {
+struct Comment: Equatable, FirebaseType {
     
     private let kPost = "post"
     private let kuserName = "username"
@@ -27,7 +27,7 @@ struct Comment: Equatable {
         return [kPost: postIdentifier, kuserName: username, kText: text]
     }
     
-    init(username: String, text: String, postIdentifier: String, identifier: String?) {
+    init(username: String, text: String, postIdentifier: String, identifier: String? = nil) {
         
         self.username = username
         self.text = text

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Like: Equatable {
+struct Like: Equatable, FirebaseType {
     
     private let kPost = "post"
     private let kUsername = "username"
@@ -31,7 +31,7 @@ struct Like: Equatable {
         self.identifier = identifier
     }
     
-    init(username: String, postIdentifier: String, identifier: String?) {
+    init(username: String, postIdentifier: String, identifier: String? = nil) {
         
         self.username = username
         self.postIdentifier = postIdentifier

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct User: Equatable {
+struct User: Equatable, FirebaseType {
     
     private let kUsername = "username"
     private let kBio = "bio"

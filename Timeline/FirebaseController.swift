@@ -11,7 +11,7 @@ import Firebase
 
 class FirebaseController {
     
-    static let base = Firebase(url: "fiery-inferno-7350.firebaseIO.com")
+    static let base = Firebase(url: "https://timelinebest.firebaseio.com/")
     
     static func dataAtEndpoint(endpoint: String, completion: (data:AnyObject?) -> Void) {
         
@@ -40,13 +40,8 @@ class FirebaseController {
 
 protocol FirebaseType {
     
-    //note: The identifier will be used to identify the object on Firebase, and when nil, tells us that the object has not yet been saved to Firebase.
     var identifier: String? { get set }
-    
-    //note: The endpoint will determine where the object will be saved on Firebase.
     var endpoint: String { get }
-    
-    //note: A JSON representation of the object that will be saved to Firebase.
     var jsonValue: [String:AnyObject] { get }
     
     init?(json: [String: AnyObject], identifier: String)
@@ -64,17 +59,16 @@ extension FirebaseType {
     var endpointBase: Firebase
         
     if let identifier = self.identifier {
-        
         endpointBase = FirebaseController.base.childByAppendingPath(endpoint).childByAppendingPath(identifier)
     } else {
         endpointBase = FirebaseController.base.childByAppendingPath(endpoint).childByAutoId()
-        
         self.identifier = endpointBase.key
         }
+        
         endpointBase.updateChildValues(self.jsonValue)
     }
     
-    func delete(){
+    func delete() {
         
         if let identifier = self.identifier {
             let endPointBase: Firebase = FirebaseController.base.childByAppendingPath(endpoint).childByAppendingPath(identifier)
