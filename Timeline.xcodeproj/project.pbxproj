@@ -167,18 +167,18 @@
 		92FAC8391BE96F5000FF2AEE /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				92AB220B1BF137D700E8602A /* FirebaseController.swift */,
-				92FAC8201BE95C7B00FF2AEE /* TimelineTableViewController.swift */,
-				92FAC8221BE95F7200FF2AEE /* PostDetailTableViewController.swift */,
-				92FAC8261BE9621C00FF2AEE /* ProfileViewController.swift */,
-				9282CA891BEC09860005D451 /* ProfileHeaderCollectionReusableView.swift */,
-				92FAC8281BE9633300FF2AEE /* AddPhotoTableViewController.swift */,
 				92FAC82A1BE964A500FF2AEE /* LoginSignupPickerViewController.swift */,
 				92FAC82C1BE9652F00FF2AEE /* LoginSignupViewController.swift */,
+				92FAC8201BE95C7B00FF2AEE /* TimelineTableViewController.swift */,
+				92FAC8261BE9621C00FF2AEE /* ProfileViewController.swift */,
 				92FAC8241BE9613800FF2AEE /* UserSearchTableViewController.swift */,
 				92B075BA1BEACDAF002E85F5 /* UserSearchResultsTableViewController.swift */,
-				9282CA8B1BEC0E8B0005D451 /* ImageCollectionViewCell.swift */,
+				92FAC8221BE95F7200FF2AEE /* PostDetailTableViewController.swift */,
+				9282CA891BEC09860005D451 /* ProfileHeaderCollectionReusableView.swift */,
+				92FAC8281BE9633300FF2AEE /* AddPhotoTableViewController.swift */,
 				9282CAAB1BED1D560005D451 /* PostTableViewCell.swift */,
+				9282CA8B1BEC0E8B0005D451 /* ImageCollectionViewCell.swift */,
+				92AB220B1BF137D700E8602A /* FirebaseController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";

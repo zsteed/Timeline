@@ -23,7 +23,7 @@ class TimelineTableViewController: UITableViewController {
             if posts.count == 0 {
                 loadTimeLineForUser(currentUser)
             } else {
-                self.tabBarController?.performSegueWithIdentifier("tologinSignup", sender: nil)
+                self.tabBarController?.performSegueWithIdentifier("toTimelineScenes", sender: nil)
             }
         }
     }

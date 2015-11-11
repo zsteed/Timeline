@@ -112,7 +112,7 @@ class UserSearchTableViewController: UITableViewController, UISearchResultsUpdat
     // MARK: Segue Navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "toProfileView" {
+        if segue.identifier == "toPostDetailView" {
             guard let cell = sender as? UITableViewCell else { return }
             
             if let indexPath = tableView.indexPathForCell(cell) {

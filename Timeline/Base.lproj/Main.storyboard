@@ -80,7 +80,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="soY-iG-U8F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1058" y="891"/>
+            <point key="canvasLocation" x="1065" y="982"/>
         </scene>
         <!--Title-->
         <scene sceneID="JyX-tH-a1X">
@@ -166,7 +166,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ikb-y5-k1C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1307" y="278"/>
+            <point key="canvasLocation" x="1484" y="543"/>
         </scene>
         <!--Add Photo Table View Controller-->
         <scene sceneID="9Ah-1Z-KYT">
@@ -234,7 +234,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvE-Qz-8Nj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1402" y="1462"/>
+            <point key="canvasLocation" x="1484" y="1226"/>
         </scene>
         <!--User Search Table View Controller-->
         <scene sceneID="PDv-iZ-So4">
@@ -283,7 +283,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wNL-BX-Pxb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117" y="-293"/>
+            <point key="canvasLocation" x="189" y="382"/>
         </scene>
         <!--User Search Results Table View Controller-->
         <scene sceneID="Bjl-64-xwV">
@@ -312,7 +312,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcC-Rd-gmV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="499" y="-359"/>
+            <point key="canvasLocation" x="592" y="382"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="nBC-zi-CRQ">
@@ -328,12 +328,11 @@
                         <segue destination="QBc-1n-wnr" kind="relationship" relationship="viewControllers" id="U6W-dl-gkc"/>
                         <segue destination="RcQ-Ka-uFt" kind="relationship" relationship="viewControllers" id="rLM-wG-gmQ"/>
                         <segue destination="CU2-BU-9eX" kind="relationship" relationship="viewControllers" id="yPd-2U-3mF"/>
-                        <segue destination="Ak7-Nc-JAj" kind="presentation" identifier="tologinSignup" id="FVm-R1-f3C"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNg-Sz-lXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-269" y="278"/>
+            <point key="canvasLocation" x="183" y="1005"/>
         </scene>
         <!--Title-->
         <scene sceneID="YLm-Ni-7pe">
@@ -433,13 +432,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3b-Sy-nvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="278"/>
+            <point key="canvasLocation" x="486" y="1677"/>
         </scene>
-        <!--Add Photo-->
+        <!--Timeline-->
         <scene sceneID="qa1-ee-VDD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QBc-1n-wnr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Add Photo" id="7iR-wr-AeC"/>
+                    <tabBarItem key="tabBarItem" title="Timeline" id="7iR-wr-AeC"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nXc-3T-bVF">
@@ -453,7 +452,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yUh-oQ-mIg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="673" y="891"/>
+            <point key="canvasLocation" x="667" y="982"/>
         </scene>
         <!--Friends-->
         <scene sceneID="qyQ-JW-mxQ">
@@ -473,7 +472,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49w-xm-Nh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-269" y="-293"/>
+            <point key="canvasLocation" x="-222" y="382"/>
         </scene>
         <!--Profile-->
         <scene sceneID="mK0-rj-ffa">
@@ -493,7 +492,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMT-mx-UEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136" y="278"/>
+            <point key="canvasLocation" x="8" y="1682"/>
         </scene>
         <!--Login Signup Picker View Controller-->
         <scene sceneID="a8h-b6-EcG">
@@ -522,21 +521,39 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="191-O3-kFL">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="191-O3-kFL">
                                         <rect key="frame" x="0.0" y="70" width="328" height="77"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgh-7m-uS7">
-                                                <rect key="frame" x="0.0" y="0.0" width="164" height="77"/>
-                                                <state key="normal" title="Log In"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="77"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Log In">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="KkB-fM-bWf" kind="show" identifier="toLoginView" id="7QO-LB-Dg1"/>
+                                                    <segue destination="KkB-fM-bWf" kind="show" identifier="toLoginView" id="F4S-m4-4J8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U41-qZ-k2J">
-                                                <rect key="frame" x="164" y="0.0" width="164" height="77"/>
-                                                <state key="normal" title="Sign Up"/>
+                                                <rect key="frame" x="166" y="0.0" width="162" height="77"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Sign Up">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="KkB-fM-bWf" kind="show" identifier="toSignupView" id="PPB-oB-L8j"/>
+                                                    <segue destination="KkB-fM-bWf" kind="show" identifier="toSignupView" id="rkz-Va-aRX"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -557,7 +574,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sWW-ah-ZMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-516" y="921"/>
+            <point key="canvasLocation" x="-615" y="982"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eMy-MA-p9m">
@@ -576,7 +593,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iyE-fT-td0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="879" y="1462"/>
+            <point key="canvasLocation" x="1065" y="1525"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hFl-s7-g6x">
@@ -595,7 +612,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EeU-80-BSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-896" y="921"/>
+            <point key="canvasLocation" x="-1003" y="982"/>
         </scene>
         <!--Login Signup View Controller-->
         <scene sceneID="qBK-R0-lLf">
@@ -641,8 +658,7 @@
                                         <rect key="frame" x="0.0" y="161" width="336" height="30"/>
                                         <state key="normal" title="Action"/>
                                         <connections>
-                                            <action selector="actionButtonTapped:" destination="KkB-fM-bWf" eventType="touchUpInside" id="Dzd-wE-edC"/>
-                                            <segue destination="aay-hS-jaC" kind="show" id="kYV-mF-imi"/>
+                                            <action selector="actionButtonTapped" destination="KkB-fM-bWf" eventType="touchUpInside" id="2tz-kq-HpE"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -658,21 +674,22 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="actionButton" destination="aoE-fc-Z4U" id="9Oc-L5-rb9"/>
+                        <outlet property="actionButton" destination="aoE-fc-Z4U" id="rdF-tQ-U9H"/>
                         <outlet property="bioTextField" destination="yvr-ns-Rs4" id="OKe-xM-ljb"/>
                         <outlet property="emailTextField" destination="LXm-3u-Rvh" id="bqL-rW-q1C"/>
                         <outlet property="passwordTextField" destination="Xtm-xX-nqS" id="RH5-aI-5C6"/>
                         <outlet property="urlTextField" destination="1wR-6Q-bMe" id="9ew-E4-XlR"/>
                         <outlet property="usernameTextField" destination="eNe-nH-aYb" id="fxS-7w-Ofh"/>
+                        <segue destination="aay-hS-jaC" kind="show" identifier="toTimelineScenes" id="j2f-ZF-t7I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uU-sS-94C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-490" y="1562"/>
+            <point key="canvasLocation" x="-210" y="1005"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PPB-oB-L8j"/>
+        <segue reference="F4S-m4-4J8"/>
         <segue reference="AfD-U4-suq"/>
         <segue reference="A7z-uc-dWf"/>
         <segue reference="3Cf-ac-KEm"/>

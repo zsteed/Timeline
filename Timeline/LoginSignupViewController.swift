@@ -17,7 +17,7 @@ class LoginSignupViewController: UIViewController {
     @IBOutlet weak var urlTextField: UITextField!
     @IBOutlet weak var actionButton: UIButton!
     
-    @IBAction func actionButtonTapped(sender: AnyObject) {
+    @IBAction func actionButtonTapped() {
         if fieldsAreValid {
             switch mode {
             case .Login:
