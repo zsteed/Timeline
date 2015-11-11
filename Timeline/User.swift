@@ -42,7 +42,7 @@ struct User: Equatable, FirebaseType {
         self.url = json[kUrl] as? String 
     }
     
-    init(username: String, bio: String?, url: String?, identifier: String?) {
+    init(username: String, uid: String, bio: String? = nil, url: String? = nil, identifier: String? = nil) {
         
         self.username = username
         self.bio = nil
