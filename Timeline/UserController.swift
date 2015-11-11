@@ -167,17 +167,6 @@ class UserController {
         UserController.sharedController.currentUser = nil
     }
     
-    static func mockUsers() -> [User] {
-        
-        let userArray = [
-            User(username: "Thor", uid: "1234"),
-            User(username: "Bilbo", uid: "5643"),
-            User(username: "Tony", uid: "8876")
-            ]
-    
-        return userArray
-    }
-    
     
 }
 

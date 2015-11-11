@@ -16,8 +16,8 @@ class UserSearchTableViewController: UITableViewController, UISearchResultsUpdat
     
     enum ViewMode: Int {
         
-        case Friends
-        case All
+        case Friends = 0
+        case All = 1
         
         func users(completion: (user: [User]?) -> Void) {
             

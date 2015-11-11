@@ -150,24 +150,6 @@ class PostController {
         return posts.sort({$0.0.identifier > $0.1.identifier})
     }
     
-    static func mockPosts() -> [Post] {
-        
-        let sampleImageIdentifier = "-K1l4125TYvKMc7rcp5e"
-        
-//        let like1 = Like(username: "Bilbo", postIdentifier: "1234", identifier: "")
-//        let like2 = Like(username: "Frodo", postIdentifier: "5678", identifier: "")
-//        let like3 = Like(username: "Thor", postIdentifier: "9871", identifier: "")
-//        
-//        let comment1 = Comment(username: "Frodo", text: "sweeet", postIdentifier: "4554", identifier: "")
-//        let comment2 = Comment(username: "Bilbo", text: "lets party", postIdentifier: "6678", identifier: "")
-        
-        let post1 = Post(imageEndPoint: sampleImageIdentifier, caption: "awesome photo", username: "Thor", identifier: "")
-        let post2 = Post(imageEndPoint: sampleImageIdentifier, caption: "sweet photo", username: "Frodo", identifier: "")
-        let post3 = Post(imageEndPoint: sampleImageIdentifier, caption: "good times", username: "Bilbo", identifier: "")
-        
-        return [post1, post2, post3]
-    }
-    
     
 }
 
