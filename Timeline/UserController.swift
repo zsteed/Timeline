@@ -10,33 +10,86 @@ import Foundation
 
 class UserController {
     
-    static let sharedController = UserController()
+    private let kuser = "userKey"
     
-    var currentUser: User! = UserController.mockUsers().first
+    var currentUser: User! {
+        get {
+            
+            guard let uid = FirebaseController.base.authData?.uid,
+                let userDictionary = NSUserDefaults.standardUserDefaults().valueForKey(kuser) as? [String: AnyObject] else {
+                    
+                    return nil
+            }
+            
+            return User(json: userDictionary, identifier: uid)
+        }
+        
+        set {
+            
+            if let newValue = newValue {
+                NSUserDefaults.standardUserDefaults().setValue(newValue.jsonValue, forKey: kuser)
+                NSUserDefaults.standardUserDefaults().synchronize()
+            } else {
+                NSUserDefaults.standardUserDefaults().removeObjectForKey(kuser)
+                NSUserDefaults.standardUserDefaults().synchronize()
+            }
+        }
+    }
+    
+    static let sharedController = UserController()
     
     // links user and identifier
     static func userForIdentifier(identifier: String, completion: (user: User?) -> Void) {
-        completion(user: mockUsers().first)
+      
+        FirebaseController.dataAtEndpoint("users/\(identifier)") { (data) -> Void in
+        
+            if let json = data as? [String:AnyObject] {
+                let user = User(json: json, identifier: identifier)
+                completion(user: user)
+            } else {
+                completion(user: nil)
+            }
+        }
     }
     
     // optional array?, fetches all users from firebase?
-    static func fetchAllUsers(completion: (user: [User]) -> Void) {
-        completion(user: mockUsers())
+    static func fetchAllUsers(completion: (users: [User]) -> Void) {
+        
+        FirebaseController.dataAtEndpoint("users") { (data) -> Void in
+        
+            if let json = data as? [String:AnyObject] {
+                let users = json.flatMap({User(json: $0.1 as! [String:AnyObject], identifier: $0.0)})
+                completion(users: users)
+            } else {
+                completion(users: [])
+            }
+        }
     }
     
     // this is called when someone when someone wants to follow the current user
     static func followUser(user: User, completion: (success: Bool) -> Void) {
+        
+        FirebaseController.base.childByAppendingPath("/users/\(sharedController.currentUser.identifier!)/follows/\(user.identifier!)").removeValue()
+        
         completion(success: true)
     }
     
     static func unfollowUser(user: User, completion: (success: Bool) -> Void) {
+        FirebaseController.base.childByAppendingPath("/users/\(sharedController.currentUser.identifier!)/follows/\(user.identifier!)").removeValue()
         
         completion(success: true)
     }
     
     // this will be called when the current user follows someone new
     static func userFollowsUser(user: User, secondUser: User, completion: (follows: Bool) -> Void) {
-        completion(follows: true)
+        
+        FirebaseController.dataAtEndpoint("/users/\(user.identifier!)/follows/\(followsUser.identifier!)") { (data) -> Void in
+            if let _ = data {
+                completion(success: true)
+            } else {
+                completion(success: false)
+            }
+        }
     }
     
     // optional array?, called when.. not sure..
